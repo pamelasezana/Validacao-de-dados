@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,300;1,400&display=swap" rel="stylesheet">
+   
+    <title>Form Front-End</title>
+</head>
+<body>
+    <div class="area-total" id="area_contato ">
+        
+        <div class="area-princip" >
+            <div class='content-box'>
+             <div class="center-content">
+                <img src="./assets/images/icon-profile.png" class="img-profile" >
+               
+              <div class="area-txt">
+                <h2 class="title-fale-espec">Cadastre-se no curso Front-end do Zero ao Pro</h2>
+                <h3 class="subtitlte-info">Após o preenchimento de todos os campos, enviaremos por e-mail os próximos passos</h3>
+                <p class="txt-info-fale">Toda nossa equipe está muito feliz por compartilhar essa incrível experiência com você!</p>
+              </div>
+               <!--area form1-->
+               <div class="area-form area-form1" id="my_form1" >
+                <form  method="post" id='form-contato' autocomplete="off">
+                
+                  <div class="form-group">
+                    <label for="nome" class="names-info">Nome</label>
+    
+                    <input type="text" class="form-control name-mobile" id="nome" name="nome"  onkeyup="mudar('nome')"  autocomplete="off">
+    
+                    <img  src="./assets/images/Alert.png" class="img-alert" id="alert_nome" >
+                    <span class='msg-erro msg-nome'></span>
+                  </div>
+                  <div class="form-group">
+                    <label for="email" class="names-info">E-mail</label>
+                    <input type="text" class="form-control" id="email" name="email"  onkeyup="mudar('email')" autocomplete="off">
+                    <img  src="./assets/images/Alert.png" class="img-alert" id="alert_email" > 
+                    <span class='msg-erro msg-email'></span>
+                  </div>
+                  <div class="form-group">
+                    <label for="telefone" class="names-info">Telefone</label>
+                
+                    <input type="text" class="form-control" id="telefone" name="telefone"  onkeyup="mudar('telefone')" onkeydown="mascara(this,mtel);"   maxlength="15" autocomplete="off"  >
+    
+                    <img src="./assets/images/Alert.png" class="img-alert" id="alert_telefone" > 
+                    <span class='msg-erro msg-telefone'></span>
+                  </div>
+               <div class="div-button-form">
+                <button type="button" class="button-form" onclick="rodaspinner(this)" id="btn_form">
+                  <span class="button__text">Enviar</span>
+              </button>
+            
+               </div>
+             
+              </form>
+             
+               </div>
+               <!--area form2-->
+                 <!--area form2-->
+               <div class="area-form area-form2" id="my_form2" >
+                <form action="" method="post" id='form-contato'>
+                 
+              <div class="contact-sucess">
+                <p class="text-info-sucess">Parabéns! Você deu o primeiro passo para a tão sonhada vaga de front-end </p>
+              </div>
+                 
+               <div class="div-button-form div-button-form1" >
+                <img src="./assets/images/Check.svg" class="img-check" >
+                <span type="button" class="button-form button-form1"  onclick="voltaForm()">
+                  <img src="./assets/images/Check.svg" class="img-check" >
+                    
+                </span>
+            
+               </div>
+             
+              </form>
+             
+               </div>
+    
+               <!--fim form2-->
+             </div>
+           
+             </div>
+            
+            </div>
+          
+        </div>
+    </div>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
+
+
+
